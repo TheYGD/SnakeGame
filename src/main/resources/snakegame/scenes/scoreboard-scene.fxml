@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="700.0" prefWidth="1000.0" style="-fx-background-color: rgb(224, 233, 209);" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="snakegame.controllers.ScoreboardController">
+   <children>
+      <ScrollPane layoutX="250.0" layoutY="200.0" prefHeight="400.0" prefWidth="500.0">
+         <content>
+            <ListView fx:id="listView" fixedCellSize="40.0" minHeight="398.0" prefHeight="398.0" prefWidth="498.0" />
+         </content>
+      </ScrollPane>
+      <SplitPane dividerPositions="0.4" focusTraversable="false" layoutX="250.0" layoutY="116.0" mouseTransparent="true" pickOnBounds="false" prefHeight="84.0" prefWidth="500.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" mouseTransparent="true" prefHeight="82.0" prefWidth="204.0" style="-fx-background-color: rgb(183, 211, 167);">
+               <children>
+                  <Label alignment="CENTER" layoutX="48.0" layoutY="16.0" prefHeight="50.0" prefWidth="100.0" text="Score">
+                     <font>
+                        <Font name="Calibri Bold" size="30.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" style="-fx-background-color: rgb(183, 211, 167);">
+               <children>
+                  <Label alignment="CENTER" layoutX="118.0" layoutY="24.0" text="Date">
+                     <font>
+                        <Font name="Calibri Bold" size="30.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+      <Button layoutX="45.0" layoutY="40.0" mnemonicParsing="false" onAction="#back_to_menu" prefHeight="50.0" prefWidth="100.0" text="Back to Menu" />
+   </children>
+</AnchorPane>
